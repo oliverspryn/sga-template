@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SGA Website Demo Template</title>
+<link rel="shortcut icon" href="images/favicon.ico"/>
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/2.3.1/css/bootstrap.css">
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/2.3.1/css/bootstrap-responsive.min.css">
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans">
+<link rel="stylesheet" href="styles/main.css">
+<link rel="stylesheet" href="styles/book-exchange-main.css">
+<script src="scripts/template.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<script src="scripts/explore.js"></script>
+<script src="scripts/book-exchange.js"></script>
+
+<!--[if lt IE 9]>
+<script src="https://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+</head>
+
+<body>
+<header id="main">
+<h1>SGA Website Demo Template</h1>
+<a class="logo" href="#"></a>
+	
+<nav>
+<h2>Site Navigation</h2>
+
+<ul>
+<li class="current_page_item"><a href="#">Book Exchange</a></li>
+<li><a href="#">Literature</a></li>
+<li><a href="#">About Us</a></li>
+</ul>
+</nav>
+</header>
+	
+<section class="loader"></section>
+	
+<section class="welcome">
+<div>
+<h2>Book Exchange</h2>
+
+<ul>
+<li class="sell">
+<a href="#">
+<h3>Sell Books</h3>
+</a>
+</li>
+
+<li class="browse">
+<h3>Browse</h3>
+<span class="count"><span>1188 Books</span></span>
+</li>
+
+<li class="search">
+<h3>Search</h3>
+</li>
+</ul>
+</div>
+</section>
+	
+<section class="explore">
+<header>
+<h2>Explore and Search the Exchange</h2>
+<div class="wrapper">
+<div class="input">
+<input id="search-main" placeholder="To search, just type..." type="search" />
+</div>
+	
+<div class="options">
+<div>
+<span class="byText">by</span>
+<select name="by" class="input-small by">
+<option value="title">Title</option>
+<option value="author">Author</option>
+</select>
+<span class="inText">in</span>
+<select name="in" class="in">
+<option value="all">All Courses</option>
+<option value="Accounting">Accounting</option>
+<option value="Art">Art</option>
+<option value="Astronomy">Astronomy</option>
+<option value="Biology">Biology</option>
+<option value="Business">Business</option>
+<option value="Chemistry">Chemistry</option>
+<option value="Chinese">Chinese</option>
+<option value="Communications">Communications</option>
+<option value="Computer Science">Computer Science</option>
+<option value="Economics">Economics</option>
+<option value="Education">Education</option>
+<option value="Electrical Engineering ">Electrical Engineering </option>
+<option value="Engineering">Engineering</option>
+<option value="English">English</option>
+<option value="Entrepreneurship">Entrepreneurship</option>
+<option value="Exercise Science">Exercise Science</option>
+<option value="French">French</option>
+<option value="General Science">General Science</option>
+<option value="Geology">Geology</option>
+<option value="German">German</option>
+<option value="Global Studies">Global Studies</option>
+<option value="Greek">Greek</option>
+<option value="Hebrew">Hebrew</option>
+<option value="History">History</option>
+<option value="Humanities">Humanities</option>
+<option value="Japanese">Japanese</option>
+<option value="Mathematics">Mathematics</option>
+<option value="Mechanical Engineering">Mechanical Engineering</option>
+<option value="Music">Music</option>
+<option value="Philosophy">Philosophy</option>
+<option value="Physics">Physics</option>
+<option value="Political Science">Political Science</option>
+<option value="Psychology">Psychology</option>
+<option value="Religion">Religion</option>
+<option value="Science Faith &amp; Tech">Science Faith &amp; Tech</option>
+<option value="Sociology">Sociology</option>
+<option value="Spanish">Spanish</option>
+<option value="Special Education">Special Education</option>
+<option value="Theater">Theater</option>
+</select>
+<span class="sortText">and sort by</span>
+<select name="sort" class="input-medium sort">
+<option value="title-asc">Title A-Z</option>
+<option value="title-desc">Title Z-A</option>
+<option value="price-asc">Price Low to High</option>
+<option value="price-desc">Price High to Low</option>
+<option value="author-asc">Author A-Z</option>
+<option value="author-desc">Author Z-A</option>
+</select>
+</div>
+</div>
+</div>
+
+<button class="btn btn-danger close-search"><span class="large">Close Search</span><span class="small">X</span></button>
+</header>
+
+<section class="content courses liberal-arts">
+<h2>Arts and Letters</h2>
+	
+<ul>
+<li style="background-image: url(images/tiles/3/icon_048.png)">
+<a href="#">
+<h3>Accounting</h3>
+<p>28 Books Avaliable</p>
+</a>
+</li>
+	
+<li style="background-image: url(images/tiles/4/icon_048.png)">
+<a href="#">
+<h3>Art</h3>
+<p>3 Books Avaliable</p>
+</a>
+</li>
+	
+<li style="background-image: url(images/tiles/7/icon_048.png)">
+<a href="#">
+<h3>Business</h3>
+<p>114 Books Avaliable</p>
+</a>
+</li>
+	
+<li style="background-image: url(images/tiles/9/icon_048.png)">
+<a href="#">
+<h3>Chinese</h3>
+<p>5 Books Avaliable</p>
+</a>
+</li>
+	
+<li style="background-image: url(images/tiles/39/icon_048.png)">
+<a href="#">
+<h3>Communications</h3>
+<p>97 Books Avaliable</p>
+</a>
+</li>
+	
+<li style="background-image: url(images/tiles/11/icon_048.png)">
+<a href="#">
+<h3>Economics</h3>
+<p>23 Books Avaliable</p>
+</a>
+</li>
+	
+<li style="background-image: url(images/tiles/12/icon_048.png)">
+<a href="#">
+<h3>Education</h3>
+<p>141 Books Avaliable</p>
+</a>
+</li>
+	
+<li style="background-image: url(images/tiles/15/icon_048.png)">
+<a href="#">
+<h3>English</h3>
+<p>89 Books Avaliable</p>
+</a>
+</li>
+	
+<li style="background-image: url(images/tiles/16/icon_048.png)">
+<a href="#">
+<h3>Entrepreneurship</h3>
+<p>28 Books Avaliable</p>
+</a>
+</li>
+	
+<li style="background-image: url(images/tiles/18/icon_048.png)">
+<a href="#">
+<h3>French</h3>
+<p>16 Books Avaliable</p>
+</a>
+</li>
+	
+<li style="background-image: url(images/tiles/21/icon_048.png)">
+<a href="#">
+<h3>German</h3>
+<p>5 Books Avaliable</p>
+</a>
+</li>
+	
+<li style="background-image: url(images/tiles/22/icon_048.png)">
+<a href="#">
+<h3>Global Studies</h3>
+<p>No Books Avaliable</p>
+</a>
+</li>
+	
+<li style="background-image: url(images/tiles/23/icon_048.png)">
+<a href="#">
+<h3>Greek</h3>
+<p>No Books Avaliable</p>
+</a>
+</li>
+	
+<li style="background-image: url(images/tiles/24/icon_048.png)">
+<a href="#">
+<h3>Hebrew</h3>
+<p>2 Books Avaliable</p>
+</a>
+</li>
+	
+<li style="background-image: url(images/tiles/25/icon_048.png)">
+<a href="#">
+<h3>History</h3>
+<p>214 Books Avaliable</p>
+</a>
+</li>
+	
+<li style="background-image: url(images/tiles/26/icon_048.png)">
+<a href="#">
+<h3>Humanities</h3>
+<p>701 Books Avaliable</p>
+</a>
+</li>
+	
+<li style="background-image: url(images/tiles/27/icon_048.png)">
+<a href="#">
+<h3>Japanese</h3>
+<p>No Books Avaliable</p>
+</a>
+</li>
+	
+<li style="background-image: url(images/tiles/29/icon_048.png)">
+<a href="#">
+<h3>Music</h3>
+<p>23 Books Avaliable</p>
+</a>
+</li>
+	
+<li style="background-image: url(images/tiles/30/icon_048.png)">
+<a href="#">
+<h3>Philosophy</h3>
+<p>52 Books Avaliable</p>
+</a>
+</li>
+	
+<li style="background-image: url(images/tiles/31/icon_048.png)">
+<a href="#">
+<h3>Political Science</h3>
+<p>131 Books Avaliable</p>
+</a>
+</li>
+	
+<li style="background-image: url(images/tiles/32/icon_048.png)">
+<a href="#">
+<h3>Psychology</h3>
+<p>129 Books Avaliable</p>
+</a>
+</li>
+	
+<li style="background-image: url(images/tiles/33/icon_048.png)">
+<a href="#">
+<h3>Religion</h3>
+<p>237 Books Avaliable</p>
+</a>
+</li>
+	
+<li style="background-image: url(images/tiles/34/icon_048.png)">
+<a href="#">
+<h3>Science Faith &amp; Technology</h3>
+<p>99 Books Avaliable</p>
+</a>
+</li>
+	
+<li style="background-image: url(images/tiles/35/icon_048.png)">
+<a href="#">
+<h3>Sociology</h3>
+<p>117 Books Avaliable</p>
+</a>
+</li>
+	
+<li style="background-image: url(images/tiles/36/icon_048.png)">
+<a href="#">
+<h3>Spanish</h3>
+<p>63 Books Avaliable</p>
+</a>
+</li>
+	
+<li style="background-image: url(images/tiles/37/icon_048.png)">
+<a href="#">
+<h3>Special Education</h3>
+<p>21 Books Avaliable</p>
+</a>
+</li>
+	
+<li style="background-image: url(images/tiles/38/icon_048.png)">
+<a href="#">
+<h3>Theater</h3>
+<p>9 Books Avaliable</p>
+</a>
+</li>
+</ul>
+</section>
+
+<section class="content courses science-mathematics">
+<h2>Science, Engineering &amp; Mathematics</h2>
+	
+<ul>
+<li style="background-image: url(images/tiles/4/icon_048.png)">
+<a href="#">
+<h3>Astronomy</h3>
+<p>10 Books Avaliable</p>
+</a>
+</li>
+	
+<li style="background-image: url(images/tiles/6/icon_048.png)">
+<a href="#">
+<h3>Biology</h3>
+<p>95 Books Avaliable</p>
+</a>
+</li>
+	
+<li style="background-image: url(images/tiles/8/icon_048.png)">
+<a href="#">
+<h3>Chemistry</h3>
+<p>87 Books Avaliable</p>
+</a>
+</li>
+	
+<li style="background-image: url(images/tiles/10/icon_048.png)">
+<a href="#">
+<h3>Computer Science</h3>
+<p>28 Books Avaliable</p>
+</a>
+</li>
+	
+<li style="background-image: url(images/tiles/13/icon_048.png)">
+<a href="#">
+<h3>Electrical Engineering</h3>
+<p>6 Books Avaliable</p>
+</a>
+</li>
+
+<li style="background-image: url(images/tiles/14/icon_048.png)">
+<a href="#">
+<h3>Engineering</h3>
+<p>4 Books Avaliable</p>
+</a>
+</li>
+	
+<li style="background-image: url(images/tiles/17/icon_048.png)">
+<a href="#">
+<h3>Exercise Science</h3>
+<p>94 Books Avaliable</p>
+</a>
+</li>
+	
+<li style="background-image: url(images/tiles/19/icon_048.png)">
+<a href="#">
+<h3>General Science</h3>
+<p>44 Books Avaliable</p>
+</a>
+</li>
+	
+<li style="background-image: url(images/tiles/20/icon_048.png)">
+<a href="#">
+<h3>Geology</h3>
+<p>1 Book Avaliable</p>
+</a>
+</li>
+	
+<li style="background-image: url(images/tiles/1/icon_048.png)">
+<a href="#">
+<h3>Mathematics</h3>
+<p>76 Books Avaliable</p>
+</a>
+</li>
+	
+<li style="background-image: url(images/tiles/28/icon_048.png)">
+<a href="#">
+<h3>Mechanical Engineering</h3>
+<p>17 Books Avaliable</p>
+</a>
+</li>
+	
+<li style="background-image: url(images/tiles/2/icon_048.png)">
+<a href="#">
+<h3>Physics</h3>
+<p>69 Books Avaliable</p>
+</a>
+</li>
+</ul>
+</section>
+</section>
+
+<footer id="bottom">
+<nav>
+<ul class="navigation">
+<li>
+<ul class="links">
+<li><a href="#">Book Exchange</a></li>
+<li><a href="#">Search Books</a></li>
+<li><a href="#">Sell Books</a></li>
+<li><a href="#">View my Books</a></li>
+</ul>
+</li>
+
+<li>
+<ul class="links">
+<li><a href="#">Literature</a></li>
+<li><a href="#">Meeting Minutes</a></li>
+<li><a href="#">Newspaper Articles</a></li>
+</ul>
+</li>
+
+<li>
+<ul class="links">
+<li><a href="#">About Us</a></li>
+<li><a href="#">Officers</a></li>
+<li><a href="#">Committees</a></li>
+<li><a href="#">Question of the Week</a></li>
+</ul>
+</li>
+
+<li>
+<ul class="promotion">
+<li>
+<a class="page facebook" href="https://www.facebook.com/pages/Student-Government-Association-at-Grove-City-College/149828851728032" target="_blank"></a>
+<a class="page twitter" href="https://twitter.com/sgaatgcc" target="_blank"></a>
+<a class="email" href="mailto:sga@gcc.edu" target="_blank">sga@gcc.edu</a>
+</li>
+
+<li>
+<a class="link HTML5" href="http://www.w3.org/html/logo/" target="_blank"></a>
+<a class="link CSS3" href="http://www.w3.org/Style/CSS/" target="_blank"></a>
+<a class="link ForwardFour" href="http://forwardfour.com/" target="_blank"></a>
+</li>
+</ul>
+</li>
+</ul>
+</nav>
+
+<ul class="mega-footer">
+<li>Established in 1876</li>
+<li class="logo"></li>
+<li>Handmade at GCC</li>
+</ul>
+</footer>
+</body>
+</html>

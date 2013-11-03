@@ -1,0 +1,1005 @@
+/**
+ * Splash display
+ * ----------------------------------
+*/
+
+section#splash {
+    position: relative;
+}
+
+section#splash h2 {
+    display: none;
+}
+
+section#splash div.ad-container {
+	background-position: center;
+	background-repeat: no-repeat;
+    border-top: 1px solid #DDDDDD;
+	height: 500px;
+	max-height: 500px;
+	min-height: 500px;
+}
+
+section#splash div.ad-container div.ad-contents {
+    -moz-transition: all .5s ease-in-out;
+	-ms-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+	-webkit-transition: all .5s ease-in-out;
+    transition: all .5s ease-in;
+    
+    background-color: rgba(34, 34, 34, 1);
+    height: 100%;
+    padding: 0px 10% 0px 10%;
+    width: 80%;
+}
+
+section#splash div.ad-container div.ad-contents.show-background {
+    -moz-transition: all .5s ease-in-out;
+	-ms-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+	-webkit-transition: all .5s ease-in-out;
+    transition: all .5s ease-in;
+    
+    background-color: rgba(34, 34, 34, 0.5);
+}
+
+section#splash div.ad-container div.ad-contents.transition {
+    -moz-transition: all .25s ease-in-out;
+	-ms-transition: all .25s ease-in-out;
+    -o-transition: all .25s ease-in-out;
+	-webkit-transition: all .25s ease-in-out;
+    transition: all .25s ease-in;
+    
+    background-color: rgba(255, 255, 255, 1);
+}
+
+section#splash div.ad-container div.ad-contents ul, section#splash div.ad-container div.ad-contents.show-background.transition ul {
+    -moz-transition: all .25s ease-in-out;
+	-ms-transition: all .25s ease-in-out;
+    -o-transition: all .25s ease-in-out;
+	-webkit-transition: all .25s ease-in-out;
+    transition: all .25s ease-in;
+    
+    -moz-opacity: 0;
+	-ms-opacity: 0;
+	-o-opacity: 0;
+	-webkit-opacity: 0;
+    filter: alpha(opacity=0);
+	opacity: 0;
+    
+    display: block;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+
+section#splash div.ad-container div.ad-contents.show-background ul {
+    -moz-opacity: 1;
+	-ms-opacity: 1;
+	-o-opacity: 1;
+	-webkit-opacity: 1;
+    filter: alpha(opacity=1);
+	opacity: 1;
+}
+
+section#splash div.ad-container div.ad-contents ul li {
+    color: #FFFFFF;
+    display: none;
+    height: 100%;
+    list-style: none;
+    padding: 0px;
+    text-align: center;
+    width: 100%;
+}
+
+section#splash div.ad-container div.ad-contents ul li.active {
+    display: table;
+}
+
+section#splash div.ad-container div.ad-contents ul li h3 {
+    font-size: 45px;
+    font-weight: 100;
+    margin: 0px;
+}
+
+section#splash div.ad-container div.ad-contents ul li > h3 {
+    display: none;
+}
+
+section#splash div.ad-container div.ad-contents ul li div {
+    display: table-cell;
+    height: 100%;
+    vertical-align: middle;
+}
+
+section#splash div.ad-container div.ad-contents ul li div.splash-left {
+    padding-right: 2%;
+    text-align: left;
+    width: 48%;
+}
+
+section#splash div.ad-container div.ad-contents ul li div.splash-right {
+    margin-left: 52%;
+    padding-left: 2%;
+    text-align: left;
+    width: 48%;
+}
+
+section#splash span.nav {
+    display: none;
+}
+
+section#splash div.button {
+    display: none;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+}
+
+section#splash div.button.show {
+    display: block;
+}
+
+section#splash div.button button {
+	background: -moz-linear-gradient(0% 90% 90deg, #0461D2, #179DFE);
+	background: -ms-linear-gradient(#179DFE, #0461D2);
+	background: -o-linear-gradient(#179DFE, #0461D2);
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#179DFE), to(#0461D2));
+	background: -webkit-linear-gradient(#179DFE, #0461D2);
+	background: linear-gradient(#179DFE, #0461D2);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#179DFE', endColorstr='#0461D2');
+    
+    background-color: #0461D2;
+	border: 1px solid #06F;
+	color: #FFFFFF;
+	font-size: 14px;
+	font-weight: bolder;
+	outline: none;
+	padding: 7px 35px 7px 35px;
+}
+
+section#splash div.button button:hover {
+	background: -moz-linear-gradient(0% 90% 90deg, #0461D2, #81B0E8);
+	background: -ms-linear-gradient(#81B0E8, #0461D2);
+	background: -o-linear-gradient(#81B0E8, #0461D2);
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#81B0E8), to(#0461D2));
+	background: -webkit-linear-gradient(#81B0E8, #0461D2);
+	background: linear-gradient(#81B0E8, #0461D2);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#81B0E8', endColorstr='#0461D2');
+}
+
+section#splash div.button button:active {
+	background: -moz-linear-gradient(0% 90% 90deg, #4F90DF, #3681DB);
+	background: -ms-linear-gradient(#3681DB, #4F90DF);
+	background: -o-linear-gradient(#3681DB, #4F90DF);
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#3681DB), to(#4F90DF));
+	background: -webkit-linear-gradient(#3681DB, #4F90DF);
+	background: linear-gradient(#3681DB, #4F90DF);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#3681DB', endColorstr='#4F90DF');
+}
+
+section#splash ul.jewels {
+	background-color: #F5F5F5;
+	border-bottom: 1px solid #DDDDDD;
+	height: 100px;
+	list-style: none;
+	margin: 0px;
+	text-align: center;
+}
+
+section#splash ul.jewels li {
+	-moz-transition: all .25s ease-in-out;
+	-ms-transition: all .25s ease-in-out;
+    -o-transition: all .25s ease-in-out;
+	-webkit-transition: all .25s ease-in-out;
+    transition: all .25s ease-in;
+	
+    background-position: center 15px;
+    background-repeat: no-repeat;
+	cursor: pointer;
+	display: inline-block;
+	font-size: 14px;
+	height: 30px;
+	padding-top: 70px;
+	margin: 0px 10px 0px 10px;
+	width: 200px;
+}
+
+section#splash ul.jewels li:hover {
+	-moz-box-shadow: inset 0 0 10px 1px #CCCCCC;
+	-ms-box-shadow: inset 0 0 10px 1px #CCCCCC;
+	-o-box-shadow: inset 0 0 10px 1px #CCCCCC;
+	-webkit-box-shadow: inset 0 0 10px 1px #CCCCCC;
+	box-shadow: inset 0 0 10px 1px #CCCCCC;
+}
+
+section#splash ul.jewels li.active {
+    background-position: center 10px;
+	border-top: 5px solid #303030;
+	padding-top: 65px;
+}
+
+@media screen and (max-width: 980px) {
+    section#splash div.ad-container {
+        border-bottom: 1px solid #DDDDDD;
+    }
+        
+    section#splash div.ad-container div.ad-contents ul li div.splash-left {
+        text-align: center;
+        width: 100%;
+    }
+    
+    section#splash div.ad-container div.ad-contents ul li div.splash-right {
+        background: #DDDDDD;
+        color: #303030;
+        display: none;
+        height: 0px;
+        left: 0px;
+        margin: 1px 0px 0px 0px;
+        overflow: hidden;
+        padding: 10px 10% 10px 10%;
+        position: absolute;
+		text-align: center;
+        top: 500px;
+        width: 80%;
+    }
+    
+    section#splash div.ad-container div.ad-contents ul li div.splash-right.show {
+        display: block;
+        height: auto;
+    }
+    
+    section#splash span.nav {
+        -moz-transition: all .25s ease-in-out;
+        -ms-transition: all .25s ease-in-out;
+        -o-transition: all .25s ease-in-out;
+        -webkit-transition: all .25s ease-in-out;
+        transition: all .25s ease-in-out;
+        
+        -moz-opacity: 0.5;
+        -ms-opacity: 0.5;
+        -o-opacity: 0.5;
+        -webkit-opacity: 0.5;
+        filter: alpha(opacity=0.5);
+        opacity: 0.5;
+        
+        background: #000000;
+        border: 3px solid #FFFFFF;
+        border-radius: 30px;
+        color: #FFFFFF;
+        cursor: pointer;
+        display: block;
+        font-size: 30px;
+        height: 30px;
+        line-height: 1;
+        position: absolute;
+        text-align: center;
+        top: 47%;
+        width: 30px;
+    }
+    
+    section#splash span.nav:hover {
+        -moz-opacity: 1;
+        -ms-opacity: 1;
+        -o-opacity: 1;
+        -webkit-opacity: 1;
+        filter: alpha(opacity=1);
+        opacity: 1;        
+    }
+    
+    section#splash span.nav.left {
+        left: 15px;
+    }
+    
+    section#splash span.nav.right {
+        right: 15px;
+    }
+    
+    section#splash div.button {
+        top: 482px;
+    }
+    
+    section#splash ul.jewels {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 650px) {    
+    section#splash div.ad-container {
+        height: 100px;
+        max-height: 100px;
+        min-height: 100px;
+    }
+    
+    section#splash span.nav {
+        top: 35px;
+    }
+    
+    section#splash div.ad-container div.ad-contents ul li > h3 {
+        display: block;
+        line-height: 2.26;
+    }
+    
+    section#splash div.ad-container div.ad-contents ul li div {
+        background: #DDDDDD;
+        color: #303030;
+        display: none;
+        height: 0px;
+        left: 0px;
+        margin: 0px;
+        max-width: 80%;
+        min-width: 80%;
+        padding: 10px 10% 10px 10%;
+		position: absolute;
+        text-align: center;
+        width: 80%;
+    }
+	
+	section#splash div.ad-container div.ad-contents ul li div.splash-left {
+		padding-right: 10%; /* This value needs explicity set */
+	}
+	
+	section#splash div.ad-container div.ad-contents ul li div.splash-left div.delete-me {
+		padding: 0px;
+		position: relative;
+		margin: 0px;
+		max-width: 100%;
+        min-width: 100%;
+		width: 100%;
+	}
+    
+    section#splash div.ad-container div.ad-contents ul li.show div {
+        display: block;
+        height: auto;
+    }
+	
+	section#splash div.ad-container div.ad-contents ul li.show div.splash-right {
+		display: none;
+	}
+    
+    section#splash div.ad-container div.ad-contents ul li div h3 {
+        display: none;
+    }
+    
+    section#splash div.button {
+        display: block;
+        top: 82px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    section#splash div.ad-container div.ad-contents ul li > h3 {
+        font-size: 30px;
+        line-height: 3.35;
+    }
+}
+
+/**
+ * Social networking
+ * ----------------------------------
+*/
+
+article#social article.twitter-post {
+	background: url(sprites/icons.png) #F5F5F5 no-repeat 23px -246px;
+	border: 1px solid #DDDDDD;
+	margin-top: 30px; 
+	padding: 30px 30px 30px 70px;
+}
+
+article#social article.twitter-post h3 {
+	display: none;
+}
+
+article#social article.twitter-post p {
+	color: #000000;
+}
+
+article#social article.twitter-post ul {
+	list-style: none;
+}
+
+article#social div.wrapper {
+	padding: 30px 0px 30px 0px;
+}
+
+article#social div.wrapper a.page {
+	-moz-transition: all .25s ease-in-out;
+	-ms-transition: all .25s ease-in-out;
+    -o-transition: all .25s ease-in-out;
+	-webkit-transition: all .25s ease-in-out;
+    transition: all .25s ease-in-out;
+	
+	background: url(sprites/icons.png) #303030 no-repeat;
+	display: inline-block;
+	height: 71px;
+	width: 66px;
+}
+
+article#social div.wrapper a.page.facebook {
+	background-position: 5px -108px;
+}
+
+article#social div.wrapper a.page.twitter {
+	background-position: 3px -183px;
+}
+
+article#social div.wrapper a.page.facebook:hover {
+	background-color: #3B5998;
+}
+
+article#social div.wrapper a.page.twitter:hover {
+	background-color: #46C8F5;
+}
+
+@media screen and (max-width: 450px) {
+    article#social article.twitter-post {
+        background: url(sprites/icons.png) #F5F5F5 no-repeat center -563px;
+        padding: 55px 30px 30px 30px;
+    }
+    
+    article#social article.twitter-post ul {
+        margin: 0px;
+        padding: 0px;
+    }
+}
+
+/**
+ * SGA calendar
+ * ----------------------------------
+*/
+
+article#calendar {
+    position: relative;
+}
+
+article#calendar h2 {
+    padding-bottom: 40px;
+}
+
+article#calendar ul.event-details {
+    margin: 0px;
+    padding: 0px;
+    vertical-align: top;
+}
+
+article#calendar ul.event-details li {
+    display: none;
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+article#calendar ul.event-details li.active {
+    display: list-item;
+}
+
+article#calendar ul.event-details li h3 {
+    font-size: 22px;
+    font-weight: 100;
+    margin: 0px;
+    padding: 0px;
+}
+
+article#calendar ul.event-details li ul.event-overview {
+    padding: 0px 0px 7px 0px;
+}
+
+article#calendar ul.event-details li ul.event-overview li {
+    background: url(sprites/icons.png) no-repeat left;
+    display: inline-block;
+    font-size: 13px;
+    padding: 0px 50px 0px 17px;
+}
+
+article#calendar ul.event-details li ul.event-overview li.date {
+    background-position: -23px -82px;
+}
+
+article#calendar ul.event-details li ul.event-overview li.time {
+    background-position: -23px -57px;
+}
+
+article#calendar ul.event-details li ul.event-overview li.location {
+    background-position: -23px -34px;
+}
+
+article#calendar ul.event-details li p {
+	margin: 10px 0px 10px 0px;
+	max-width: none;
+    text-align: left;
+}
+
+article#calendar ul.event-list {
+	list-style: none;
+	margin: 0px;
+	padding: 40px 0px 0px 0px;
+	text-align: center;
+}
+
+article#calendar ul.event-list li {
+	-moz-transition: all .25s ease-in-out;
+	-ms-transition: all .25s ease-in-out;
+    -o-transition: all .25s ease-in-out;
+	-webkit-transition: all .25s ease-in-out;
+    transition: all .25s ease-in-out;
+	
+	background: #FBFBFB;
+	border: 1px solid #DDDDDD;
+	cursor: pointer;
+	display: inline-block;
+	margin: 5px;
+	width: 200px;
+}
+
+article#calendar ul.event-list li.active, article#calendar ul.event-list li:hover {
+	background: #303030;
+}
+
+article#calendar ul.event-list li p {
+	font-size: 13px;
+	font-weight: bolder;
+	text-transform: uppercase;
+}
+
+article#calendar ul.event-list li time {
+	-moz-transition: all .25s ease-in-out;
+	-ms-transition: all .25s ease-in-out;
+    -o-transition: all .25s ease-in-out;
+	-webkit-transition: all .25s ease-in-out;
+    transition: all .25s ease-in-out;
+	
+	display: block;
+	font-size: 12px;
+	padding-bottom: 15px;
+	text-align: center;
+}
+
+article#calendar ul.event-list li.active time, article#calendar ul.event-list li:hover time {
+	color: #FFFFFF;
+}
+
+article#calendar span.nav {
+	display: none;
+}
+
+@media screen and (max-width: 980px) {
+	article#calendar ul.event-list li {
+		padding: 0px 15px 0px 15px;
+		width: auto;
+	}
+	
+	article#calendar ul.event-list li time {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 650px) {
+    article#calendar {
+        padding-bottom: 75px;
+    }
+    
+    article#calendar ul.event-list {
+        display: none;
+    }
+    
+    article#calendar ul.event-details {
+        border-left: none;
+        margin: 0px;
+        padding: 0px;
+    }
+	
+	article#calendar span.nav {
+        -moz-transition: all .25s ease-in-out;
+        -ms-transition: all .25s ease-in-out;
+        -o-transition: all .25s ease-in-out;
+        -webkit-transition: all .25s ease-in-out;
+        transition: all .25s ease-in-out;
+        
+        -moz-opacity: 0.5;
+        -ms-opacity: 0.5;
+        -o-opacity: 0.5;
+        -webkit-opacity: 0.5;
+        filter: alpha(opacity=0.5);
+        opacity: 0.5;
+        
+        background: #000000;
+        border: 3px solid #FFFFFF;
+        border-radius: 30px;
+		bottom: 30px;
+        color: #FFFFFF;
+        cursor: pointer;
+        display: block;
+        font-size: 30px;
+        height: 30px;
+        line-height: 1;
+        position: absolute;
+        text-align: center;
+        width: 30px;
+    }
+    
+    article#calendar span.nav:hover {
+        -moz-opacity: 1;
+        -ms-opacity: 1;
+        -o-opacity: 1;
+        -webkit-opacity: 1;
+        filter: alpha(opacity=1);
+        opacity: 1;        
+    }
+	
+	article#calendar span.nav.left {
+		left: 40%;
+	}
+	
+	article#calendar span.nav.right {
+		right: 40%;
+	}
+}
+
+/**
+ * Campus websites
+ * ----------------------------------
+*/
+
+article#links h3 {
+    text-align: center;
+}
+
+article#links ul {
+    list-style: none;
+    margin: 0px;
+    padding: 0px 0px 40px 0px;
+    text-align: center;
+}
+
+article#links ul:last-child {
+    padding: 0px;
+}
+
+article#links ul li {
+    -moz-transition: all .25s ease-in-out;
+	-ms-transition: all .25s ease-in-out;
+    -o-transition: all .25s ease-in-out;
+	-webkit-transition: all .25s ease-in-out;
+    transition: all .25s ease-in-out;
+    
+    background: url(../images/links/desktop.jpg) no-repeat;
+    background-repeat: no-repeat;
+    border: 1px solid #E4E4E4;
+    display: inline-block;
+    height: 200px;
+    margin: 7px;
+    position: relative;
+    vertical-align: top;
+    width: 300px;
+}
+
+article#links ul li:hover {
+    border: 1px solid #555555;
+}
+
+article#links ul li.cafeteria-menu {
+    background-position: -600px 0px;
+}
+
+article#links ul li.academic-calendar {
+    background-position: 0px 0px;
+}
+
+article#links ul li.organizations {
+    background-position: -2400px 0px;
+}
+
+article#links ul li.organization-websites {
+    background-position: -2700px 0px;
+}
+
+article#links ul li.student-directory {
+    background-position: -3000px 0px;
+}
+
+article#links ul li.campus-contact {
+    background-position: -900px 0px;
+}
+
+article#links ul li.office-hours {
+    background-position: -2100px 0px;
+}
+
+article#links ul li.building-hours {
+    background-position: -300px 0px;
+}
+
+article#links ul li.department-websites {
+    background-position: -1800px 0px;
+}
+
+article#links ul li.chapel-schedule {
+    background-position: -1500px 0px;
+}
+
+article#links ul li.chapel-recordings {
+    background-position: -1200px 0px;
+}
+
+article#links ul li p {
+    margin: 0px;
+    padding-left: 15px;
+    text-align: left;
+}
+
+article#links ul li p.category {
+    font-size: 11px;
+    margin: 0px;
+    padding-top: 110px;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+article#links ul li p.title {
+    font-size: 18px;
+    padding-top: 3px;
+}
+
+article#links ul li p.link {
+    background: url(sprites/icons.png) no-repeat -19px 2px;
+    font-size: 11px;
+    margin-top: 24px;
+    max-width: 255px;
+    overflow: hidden;
+    padding: 5px 15px 5px 30px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 255px;
+}
+
+@media screen and (max-width: 980px) {
+    article#links h3 {
+        padding: 0px;
+    }
+    
+    article#links ul {
+        padding: 0px;
+    }
+    
+    article#links ul li {
+        background: url(../images/links/mobile.jpg) no-repeat;
+        height: 100px;
+    }
+    
+    article#links ul li.cafeteria-menu {
+        background-position: 0px -200px;
+    }
+    
+    article#links ul li.academic-calendar {
+        background-position: 0px 0px;
+    }
+    
+    article#links ul li.organizations {
+        background-position: 0px -800px;
+    }
+    
+    article#links ul li.organization-websites {
+        background-position: 0px -900px;
+    }
+    
+    article#links ul li.student-directory {
+        background-position: 0px -1000px;
+    }
+    
+    article#links ul li.campus-contact {
+        background-position: 0px -300px;
+    }
+    
+    article#links ul li.office-hours {
+        background-position: 0px -700px;
+    }
+    
+    article#links ul li.building-hours {
+        background-position: 0px -100px;
+    }
+    
+    article#links ul li.department-websites {
+        background-position: 0px -600px;
+    }
+    
+    article#links ul li.chapel-schedule {
+        background-position: 0px -400px;
+    }
+    
+    article#links ul li.chapel-recordings {
+        background-position: 0px -500px;
+    }
+    
+    article#links ul li p.category {
+        padding: 10px 0px 0px 130px;
+    }
+    
+    article#links ul li p.title {
+        bottom: 0px;
+        left: 0px;
+        padding: 0px 0px 0px 130px;
+        position: absolute;
+        right: 0px;
+        top: 25px;
+    }
+    
+    article#links ul li p.link {
+        display: none;
+    }
+}
+
+/**
+ * About us
+ * ----------------------------------
+*/
+
+article#about article.snapshot {
+	padding: 50px 0px 20px 0px;
+}
+
+article#about article.snapshot h3 {
+	display: none;
+}
+
+article#about article.snapshot ul {
+	list-style: none;
+    padding: 0px;
+}
+
+article#about article.snapshot ul li {
+	display: inline-block;
+	padding: 0px 3% 0px 0px;
+	vertical-align: top;
+	width: 30%;
+}
+
+article#about article.snapshot ul li:last-child {
+    padding-right: 0px;
+}
+
+article#about article.snapshot ul li h4 {
+	font-size: 68px;
+	font-weight: normal;
+	margin: 0px;
+}
+
+article#about article.snapshot ul li p {
+	font-size: 16px;
+	font-weight: normal;
+	text-align: left;
+}
+
+article#about h3 {
+    text-align: center;
+}
+    
+article#about ul.people {
+	list-style: none;
+	padding: 0px;
+    text-align: center;
+}
+
+article#about ul.people li {
+	display: inline-block;
+	font-weight: bold;
+	padding: 0px 20px 20px 0px;
+	position: relative;
+    text-align: left;
+}
+
+article#about ul.people li div {
+	-moz-transition: all .25s ease-in-out;
+	-ms-transition: all .25s ease-in-out;
+    -o-transition: all .25s ease-in-out;
+	-webkit-transition: all .25s ease-in-out;
+    transition: all .25s ease-in-out;
+	
+	-moz-opacity: 0;
+	-ms-opacity: 0;
+	-o-opacity: 0;
+	-webkit-opacity: 0;
+    filter: alpha(opacity=0);
+	opacity: 0;
+}
+
+article#about ul.people li div:hover {
+	filter: alpha(opacity=0.7);
+	-moz-opacity: 0.7;
+	-ms-opacity: 0.7;
+	-o-opacity: 0.7;
+	-webkit-opacity: 0.7;
+	opacity: 0.7;
+}
+
+article#about ul.people li div span {	
+	background: #FFFFFF;
+	padding: 10px;
+	position: absolute;
+	text-align: center;
+	width: 155px;
+}
+
+article#about ul.people li div span.name {
+	padding: 65px 10px 6px 10px;
+	top: 0px;
+}
+
+article#about ul.people li div span.position {
+	bottom: 25px;
+	height: 107px;
+}
+
+@media screen and (max-width: 980px) {
+    article#about article.snapshot {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    article#about h3 {
+        padding: 0px;
+    }    
+        
+    article#about ul.people li {
+        display: inline-block;
+        padding-right: 0px;
+        width: 250px;
+    }
+    
+    article#about ul.people li:last-child {
+        padding: 0px;
+    }
+    
+    article#about ul.people li img {
+        float: left;
+        max-width: 75px;
+    }
+    
+    article#about ul.people li div {
+        -moz-transition: none;
+        -ms-transition: none;
+        -o-transition: none;
+        -webkit-transition: none;
+        transition: none;
+        
+        -moz-opacity: 1;
+        -ms-opacity: 1;
+        -o-opacity: 1;
+        -webkit-opacity: 1;
+        filter: alpha(opacity=1);
+        opacity: 1;
+        
+        margin-left: 90px;
+        position: relative;
+    }
+    
+    article#about ul.people li div:hover {
+        filter: alpha(opacity=1);
+        -moz-opacity: 1;
+        -ms-opacity: 1;
+        -o-opacity: 1;
+        -webkit-opacity: 1;
+        opacity: 1;
+    }
+    
+    article#about ul.people li div span {
+        background: none;
+		font-weight: normal;
+        position: inherit;
+        text-align: left;
+        width: auto;
+    }
+    
+    article#about ul.people li div span.name {
+        display: block;
+        padding: 0px;
+    }
+    
+    article#about ul.people li div span.position {
+        bottom: auto;
+        height: auto;
+        font-size: 12px;
+        padding: 25px 0px 0px 0px;
+        top: 0px;
+    }
+}
